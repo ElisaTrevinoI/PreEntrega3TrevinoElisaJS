@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+
+/*mobile first 0px-320px*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    background-color: rgb(113, 240, 198);
+    color: #001f3f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*nombres de las áreas para la grilla*/
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.principal {
+    grid-area: principal;
+    margin-top: 20px;
+}
+
+.galeria {
+    grid-area: galeria;
+    font-size: larger;
+}
+
+.textoInformativo {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.textoInformativo1 {
+    font-size: small;
+    text-align: center;
+}
+
+.textoInfEstambres {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 5rem;
+}
+
+
+.encabezadoUno {
+    text-align: center;
+}
+
+.imgRedes {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "principal"
+        "galeria"
+        "footer";
+}
+
+.videos {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.imgEstambres {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2px;
+    justify-items: center;
+}
+
+
+.carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    margin-left: 1rem;
+}
+
+
+.video {
+    width: 200px;
+    height: 215px;
+    /* margin-top: 1.5rem;*/
+}
+
+.estambre {
+    width: 150px;
+    height: 165px;
+   /* border-radius: 8px;*/
+}
+
+.datosEstambre{
+    text-align: left;
+}
+
+.mostrarEstambre{
+    border: 3px solid white;
+    margin-top: 30px;
+}
+
+.boton{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight : bold ;
+    
+}
+
+.botonCarrito{
+    border: none;
+    background-color: rgb(113, 240, 198);
+
+}
+
+.campoEntrada{
+    width: 20%;
+}
+
+
+@media (min-width:320px) {
+
+    /*reacomodamos el orden de la grilla*/
+    .grilla {
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "principal principal"
+            "galeria galeria"
+            "footer footer";
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .video {
+        width: 300px;
+        height: 315px;
+    }
+
+    .estambre {
+        width: 200px;
+        height: 215px;
+       /* border-radius: 8px;*/
+    }
+
+    .textoInformativo {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .textoInformativo1 {
+        font-size: small;
+        text-align: center;
+    }
+
+    .encabezadoUno {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+
+
+    header {
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .encabezado1 {
+        margin-top: 6rem;
+    }
+
+
+    nav {
+        margin-top: 2rem;
+    }
+
+    .grilla {
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "principal principal principal"
+            "galeria galeria galeria"
+            "footer footer footer";
+    }
+
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .imgEstambres {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2px;
+    }
+
+    .textoInformativo {
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    .textoInformativo1 {
+        font-size: small;
+        text-align: left;
+    }
+
+    .encabezadoUno {
+        text-align: left;
+    }
+
+   /* .estambre {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .estambre:hover {
+        transform: scale(1.3) rotate(5deg);
+    }*/
+
+
+    footer {
+        margin-top: 5rem;
+    }
+
+    .imgRedes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .encabezado1 {
+
+        font-size: 50px;
+    }
+
+    .imgCarousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+}
