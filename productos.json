@@ -1,0 +1,34 @@
+[
+        {
+            "id": 1, "nombre": "Mandala OMBRÉ", "stock": 23, "precio": 100,
+            "imgUrl": "../img/estambre1_1.jpg", "material": "Algodon"
+        },
+        {
+            "id": 2, "nombre": "Mandala THICK & QUICK", "stock": 10, "precio": 90,
+            "imgUrl": "../img/estambre1_2.jpg", "material": "Algodon"
+        },
+        {
+            "id": 3, "nombre": "Mandala BABY", "stock": 34, "precio": 80,
+            "imgUrl": "../img/estambre1_3.jpg", "material": "Algodon"
+        },
+        {
+            "id": 4, "nombre": "Mandala SEQUINS", "stock": 16, "precio": 120,
+            "imgUrl": "../img/estambre1_4.jpg", "material": "Algodon"
+        },
+        {
+            "id": 5, "nombre": "Wool Ease WOW", "stock": 23, "precio": 150,
+            "imgUrl": "../img/estambre2_1.jpg", "material": "Lana"
+        },
+        {
+            "id": 6, "nombre": "Wool Ease", "stock": 10, "precio": 130,
+            "imgUrl": "../img/estambre2_2.jpg", "material": "Lana"
+        },
+        {
+            "id": 7, "nombre": "Wool Ease THICK & QUICK", "stock": 34, "precio": 100,
+            "imgUrl": "../img/estambre2_3.jpg", "material": "Lana"
+        },
+        {
+            "id": 8, "nombre": "Wool Ease THICK & QUICK", "stock": 16, "precio": 120,
+            "imgUrl": "../img/estambre2_4.jpg", "material": "Lana"
+        }
+    ]

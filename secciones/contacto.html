@@ -9,45 +9,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/estilo.css">
 
-    <title>TODO PARA TEJER</title>
+    <title>Todo para Tejer - Contacto</title>
+    <meta name="description" content="Comunícate con nosotros">
+    <meta name="keywords" content="comunicación, dudas">
 </head>
 
 <body>
-    <div class="envoltura">
-        <header>
+    <div class="contenedorProductos">
+        <header class="encabezadoInicial">
             <a href="../index.html">
                 <img width="180" height="195" src="../img/logo.jpg" alt="imagenLogo">
             </a>
             <h1 class="encabezado1">TODO PARA TEJER</h1>
             <div>
-                <a id="idBusquedaImagen" class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                 <!--  
+                <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
-                    <img src="../img/imagenBusqueda.png" alt="imagenBusqueda">
+                    <img src="../img/imagenBusqueda.png" alt="Imagen Búsqueda">
                 </a>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
                         <form class="d-flex">
-                            <input id="idInputBusqueda" class="form-control me-2" type="search" placeholder=""
-                                aria-label="Search">
-                            <button id="idBusqueda" class="btn btn-outline-success" type="button">Buscar</button>
+                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>
-
-                <!--<a href="./contacto.html">
-                    <img src="../img/imagenContacto.png" alt="imagenContacto">
-                </a>-->
-                <button id="idCarrito" class="botonCarrito"><img src="../img/imagenCompra.png" alt="imagenCompra">
-                </button>
+                <a href="./contacto.html">
+                    <img src="../img/imagenContacto.png" alt="Imagen Contacto">
+                </a>
+                <a href="#"><img src="../img/imagenCompra.png" alt="Imagen Compra"></a>
+                -->
             </div>
         </header>
 
+
         <!--  Navbar de Bootstrap  -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbarProductos navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <!--<a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -60,45 +62,75 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active  text-danger" aria-current="page"
-                                href="./estambres.html">ESTAMBRES</a>
+                            <a class="nav-link active" aria-current="page" href="./estambres.html">ESTAMBRES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                            <a class="nav-link active text-danger" aria-current="page"
+                                href="./contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+    </div>
 
-        <div class="principal">
 
+    <div class="row">
+        <div class="col textoContacto">
+            <h2>Comunícate con nosotros</h2>
         </div>
     </div>
 
-    <section class="galeria">
 
-        <section>
-            <p id="textoPrincipalEst" class="textoInfEstambres">Encuentra los mejores estambres para realizar tus
-                proyectos de tejido</p>
-        </section>
+    <form action="">
+        <div class="row forma1">
 
-        <section class="classVaciarCarrito" id="vaciarCarrito"></section>
+            <div class="col">
+                <label for="">Nombre</label>
+                <input class="form-control inputContacto" type="text">
+            </div>
+            <div class="col">
+                <label for="">Apellido</label>
+                <input class="form-control inputContacto" type="text">
+            </div>
+            <div class="col">
+            </div>
+        </div>
 
-        <section class="imgEstambres" id="contenedorProductos"></section>
-        <section class="imgEstambres" id="contenedorCarrito"></section>
+        <div class="row forma1">
+            <div class="col">
+                <label for="">Correo Electrónico</label>
+                <input class="correoE form-control inputContacto" type="email">
+            </div>
 
-    </section>
+        </div>
+
+        <div class="row forma1">
+            <div class="col formaComentarios">
+                <label for="">Comentarios</label>
+                <textarea class="comentarios form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="row forma1">
+            <div class="col">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </div>
+
+        </div>
+    </form>
 
     <footer>
+
         <div class="textoInformativo1">
-            <p> Acerca de Todo para tejer<br>
-                Contamos con 20 años de experiencia y estamos comprometidos a ofrecer los
+            <h3> Acerca de Todo para tejer</h3>
+            <p> Contamos con 20 años de experiencia y estamos comprometidos a ofrecer los
                 productos de la mejor
                 calidad para
-                nuestros clientes<br>
-                Nos ubicamos físicamente en México y contamos con entregas a todo el mundo
-            </p>
+                nuestros clientes</p>
+            <p> Nos ubicamos físicamente en México y contamos con entregas a todo el mundo</p>
+
         </div>
         <div class="imgRedes">
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/imagenFacebook.png"
@@ -110,17 +142,13 @@
             <a href="https://www.youtube.com/" target="_blank"><img src="../img/imagenYoutube.png"
                     alt="imagenYoutube"></a>
         </div>
-    </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../script.js"></script>
+    </footer>
 
     <!--  Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
 
 </body>
 

@@ -22,6 +22,29 @@ body {
 
 /*nombres de las áreas para la grilla*/
 
+.ligaLogin {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    background-color: rgb(113, 240, 198);
+    color: #001f3f;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.inputLogin {
+    width: 20%;
+}
+
+.inputContacto{
+    width: 50%;
+}
+
+.form-group {
+    text-align: left;
+    padding: 1rem;
+}
+
 header {
     grid-area: header;
 }
@@ -118,19 +141,22 @@ footer {
 .estambre {
     width: 150px;
     height: 165px;
-   /* border-radius: 8px;*/
+    /* border-radius: 8px;*/
 }
 
-.datosEstambre{
+.datosEstambre {
     text-align: left;
 }
 
-.mostrarEstambre{
+.mostrarEstambre {
     border: 3px solid white;
     margin-top: 30px;
 }
 
-.boton{
+
+
+.boton,
+.botonEliminar {
     background-color: white;
     border: none;
     color: black;
@@ -139,17 +165,17 @@ footer {
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    font-weight : bold ;
-    
+    font-weight: bold;
+
 }
 
-.botonCarrito{
+.botonCarrito {
     border: none;
     background-color: rgb(113, 240, 198);
 
 }
 
-.campoEntrada{
+.campoEntrada {
     width: 20%;
 }
 
@@ -182,7 +208,7 @@ footer {
     .estambre {
         width: 200px;
         height: 215px;
-       /* border-radius: 8px;*/
+        /* border-radius: 8px;*/
     }
 
     .textoInformativo {
@@ -257,7 +283,7 @@ footer {
         text-align: left;
     }
 
-   /* .estambre {
+    /* .estambre {
         transition: all 0.3s;
         box-sizing: border-box;
         max-width: 100%;
@@ -296,4 +322,25 @@ footer {
         width: 100%;
     }
 
+}
+
+.forma1 {
+    text-align: left;
+    padding: 1rem;
+}
+
+
+.correoE {
+    width: 250px;
+}
+
+.comentarios {
+    width: 300px;
+    height: 300px;
+}
+
+.formaComentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
